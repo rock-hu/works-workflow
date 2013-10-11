@@ -6,9 +6,8 @@
                            http://www.springframework.org/schema/tx      http://www.springframework.org/schema/tx/spring-tx-3.1.xsd">
 
 
-	<import resource="classpath*:common/database/applicationContext-datasource-locale.xml" />
 
-<!-- 	<activiti:annotation-driven process-engine="processEngine" /> -->
+	<activiti:annotation-driven process-engine="processEngine" />
 
 	<bean id="processEngineConfiguration" class="org.activiti.spring.SpringProcessEngineConfiguration">
 		<property name="dataSource" ref="dataSource" />
