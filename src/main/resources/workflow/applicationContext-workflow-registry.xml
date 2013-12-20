@@ -17,7 +17,7 @@
     	   http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd
     	   http://www.springframework.org/schema/util 
     	   http://www.springframework.org/schema/util/spring-util-3.2.xsd">
-	<import resource="classpath*:common/applicationContext-common-registry-locale.xml" />
+	<import resource="classpath*:common/applicationContext-common-registry.xml" />
 	<import resource="classpath*:resource/applicationContext-resource-registry.xml" />
 	<import resource="classpath*:model/applicationContext-model-registry.xml" />
 	<import resource="classpath:workflow/applicationContext-activiti.xml" />
