@@ -29,7 +29,6 @@
 		<dependency>
 			<groupId>org.activiti</groupId>
 			<artifactId>activiti-engine</artifactId>
-			<version>${activiti.version}</version>
 			<exclusions>
 				<exclusion>
 					<groupId>org.livetribe</groupId>
