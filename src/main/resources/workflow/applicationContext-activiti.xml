@@ -11,7 +11,7 @@
 	<import resource="classpath:workflow/activiti-context.xml" />
 
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-		<property name="dataSource" ref="dataSource" />
+		<property name="dataSource" ref="activitiDataSource" />
 		<property name="configLocation" value="classpath:mybatis-config.xml" />
 		<property name="transactionFactory">
 			<bean class="org.mybatis.spring.transaction.SpringManagedTransactionFactory" />

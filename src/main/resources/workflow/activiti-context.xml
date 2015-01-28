@@ -8,10 +8,10 @@
 
 
 	<bean id="activitiDataSource" class="org.apache.commons.dbcp.BasicDataSource">
-		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://localhost:3306/activiti" />
-		<property name="username" value="root" />
-		<property name="password" value="root" />
+		<property name="driverClassName" value="org.postgresql.Driver" />
+		<property name="url" value="jdbc:postgresql://localhost:5433/activiti" />
+		<property name="username" value="postgres" />
+		<property name="password" value="password" />
 		<property name="defaultAutoCommit" value="false" />
 		<property name="initialSize" value="20" />
 		<property name="maxActive" value="50" />
@@ -25,7 +25,7 @@
 
 	<bean id="processEngineConfiguration" class="org.activiti.spring.SpringProcessEngineConfiguration">
 		<property name="dataSource" ref="activitiDataSource" />
-		<property name="databaseType" value="mysql" />
+		<property name="databaseType" value="postgres" />
 		<property name="transactionManager" ref="activitiTransactionManager" />
 		<property name="databaseSchemaUpdate" value="true" />
 		<property name="mailServerHost" value="localhost" />
