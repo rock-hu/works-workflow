@@ -96,18 +96,4 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-	<repositories>
-		<repository>
-			<id>kafeitu</id>
-			<url>http://maven.kafeitu.me/nexus/content/groups/public</url>
-		</repository>
-		<repository>
-			<id>alfresco</id>
-			<url>https://maven.alfresco.com/nexus/content/groups/public/</url>
-		</repository>
-		<repository>
-			<id>codehaus</id>
-			<url>http://repository.codehaus.org</url>
-		</repository>
-	</repositories>
 </project>

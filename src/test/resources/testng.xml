@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="works-workflow-suite">
+	<test name="works-workflow">
+		<packages>
+			<package name="org.works.workflow" />
+		</packages>
+	</test>
+</suite>
