@@ -8,17 +8,17 @@ import org.activiti.engine.RepositoryService;
 import org.activiti.engine.RuntimeService;
 import org.activiti.engine.TaskService;
 import org.activiti.engine.test.ActivitiRule;
-import org.junit.Rule;
-import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
-import org.springframework.test.context.transaction.TransactionConfiguration;
+import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.springframework.util.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
 
 @ContextConfiguration(locations = { "classpath:workflow/applicationContext-workflow-registry.xml" })
-@TransactionConfiguration(transactionManager = "transactionManager", defaultRollback = false)
-public class WorkflowModuleTest extends AbstractJUnit4SpringContextTests {
+public class WorkflowModuleTest extends AbstractTestNGSpringContextTests {
 
 	@Autowired
 	private RepositoryService repositoryService;
@@ -35,7 +35,6 @@ public class WorkflowModuleTest extends AbstractJUnit4SpringContextTests {
 	@Autowired
 	private ManagementService managementService;
 	@Autowired
-	@Rule
 	public ActivitiRule activitiSpringRule;
 
 	@Test
